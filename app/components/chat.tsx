@@ -867,13 +867,13 @@ export function Chat() {
                 }
               >
                 <div className={styles["chat-message-container"]}>
-                  <div className={styles["chat-message-avatar"]}>
-                    {message.role === "user" ? (
-                      <Avatar avatar={config.avatar} />
-                    ) : (
-                      <MaskAvatar mask={session.mask} />
-                    )}
-                  </div>
+                  {/*<div className={styles["chat-message-avatar"]}>*/}
+                  {/*  {message.role === "user" ? (*/}
+                  {/*    <Avatar avatar={config.avatar} />*/}
+                  {/*  ) : (*/}
+                  {/*    <MaskAvatar mask={session.mask} />*/}
+                  {/*  )}*/}
+                  {/*</div>*/}
                   {showTyping && (
                     <div className={styles["chat-message-status"]}>
                       {Locale.Chat.Typing}
