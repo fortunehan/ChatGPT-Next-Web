@@ -778,17 +778,17 @@ export function Chat() {
   return (
     <div className={styles.chat} key={session.id}>
       <div className="window-header" data-tauri-drag-region>
-        <div className="window-header-title">
-          <div
-            className={`window-header-main-title " ${styles["chat-body-title"]}`}
-            onClickCapture={renameSession}
-          >
-            {!session.topic ? DEFAULT_TOPIC : session.topic}
-          </div>
-          <div className="window-header-sub-title">
-            {Locale.Chat.SubTitle(session.messages.length)}
-          </div>
-        </div>
+        {/*<div className="window-header-title">*/}
+        {/*  <div*/}
+        {/*    className={`window-header-main-title " ${styles["chat-body-title"]}`}*/}
+        {/*    onClickCapture={renameSession}*/}
+        {/*  >*/}
+        {/*    {!session.topic ? DEFAULT_TOPIC : session.topic}*/}
+        {/*  </div>*/}
+        {/*  <div className="window-header-sub-title">*/}
+        {/*    {Locale.Chat.SubTitle(session.messages.length)}*/}
+        {/*  </div>*/}
+        {/*</div>*/}
         <div className="window-actions">
           <div className={"window-action-button" + " " + styles.mobile}>
             <IconButton
