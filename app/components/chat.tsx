@@ -982,7 +982,6 @@ export function Chat() {
           />
           <IconButton
             icon={<SendWhiteIcon />}
-            text={Locale.Chat.Send}
             className={styles["chat-input-send"]}
             type="primary"
             onClick={() => doSubmit(userInput)}
