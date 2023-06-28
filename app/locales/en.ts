@@ -18,7 +18,7 @@ const en: LocaleType = {
     ChatItemCount: (count: number) => `${count} messages`,
   },
   Chat: {
-    SubTitle: (count: number) => `${count} messages with ChatGPT`,
+    SubTitle: (count: number) => `${count} messages`,
     Actions: {
       ChatList: "Go To Chat List",
       CompressedHistory: "Compressed History Memory Prompt",
@@ -69,7 +69,7 @@ const en: LocaleType = {
     Copy: "Copy All",
     Download: "Download",
     MessageFromYou: "Message From You",
-    MessageFromChatGPT: "Message From ChatGPT",
+    MessageFromChatGPT: "Message From Dev-Query",
     Share: "Share to ShareGPT",
     Format: {
       Title: "Export Format",
