@@ -181,7 +181,7 @@ export function SideBar(props: { className?: string }) {
         <div>
           <IconButton
             icon={<AddIcon />}
-            text={shouldNarrow ? undefined : Locale.Home.NewChat}
+            // text={shouldNarrow ? undefined : Locale.Home.NewChat}
             onClick={() => {
               if (config.dontShowMaskSplashScreen) {
                 chatStore.newSession();
