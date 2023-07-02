@@ -980,12 +980,12 @@ export function Chat() {
               fontSize: config.fontSize,
             }}
           />
-          <IconButton
-            icon={<SendWhiteIcon />}
-            className={styles["chat-input-send"]}
-            type="primary"
-            onClick={() => doSubmit(userInput)}
-          />
+          {/*<IconButton*/}
+          {/*  icon={<SendWhiteIcon />}*/}
+          {/*  className={styles["chat-input-send"]}*/}
+          {/*  type="primary"*/}
+          {/*  onClick={() => doSubmit(userInput)}*/}
+          {/*/>*/}
         </div>
       </div>
 
