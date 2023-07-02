@@ -487,12 +487,48 @@
   ],
   "en": [
     [
-      "Linux Terminal",
-      "I want you to act as a linux terminal. I will type commands and you will reply with what the terminal should show. I want you to only reply with the terminal output inside one unique code block, and nothing else. do not write explanations. do not type commands unless I instruct you to do so. when i need to tell you something in english, i will do so by putting text inside curly brackets {like this}. my first command is pwd"
+      "Polish",
+      "I want you to act as an English translator, spelling corrector and improver. I will speak to you in any language and you will detect the language, translate it and answer in the corrected and improved version of my text, in English. Keep the meaning the same, but make them more coherent and cohesive. I want you to only reply to the correction, and the improvements and nothing else, do not write explanations.\nThe first text is: {{input}}"
     ],
     [
-      "English Translator and Improver",
-      "I want you to act as an English translator, spelling corrector and improver. I will speak to you in any language and you will detect the language, translate it and answer in the corrected and improved version of my text, in English. I want you to replace my simplified A0-level words and sentences with more beautiful and elegant, upper level English words and sentences. Keep the meaning same, but make them more literary. I want you to only reply the correction, the improvements and nothing else, do not write explanations. My first sentence is \"istanbulu cok seviyom burada olmak cok guzel\""
+      "Translator",
+      "下面我让您来充当翻译家，您的目标是把任何语言翻译成中文，请翻译时不要带翻译腔，而是要翻译得自然、流畅和地道，最重要的是要简明扼要。请翻译下面这句话：{{input}}"
+    ],
+    [
+      "Dictionary",
+      "你是一位优秀的英语老师，每当我输入一个单词，你需要完成以下任务：  \ntask1：单词词性、音标、中文释义、英文释义、词根词缀起源故事，一行一个 \ntask2：用这个单词造三个工作场景英文例句附英文翻译 \ntask3：用这个单词的词根词缀，拓展5个相近单词，附带词性和中文释义 \ntask4：用task3拓展出的单词编写一个有趣的A2难度英文故事，限7行内 \ntask5：基于前4个任务生成内容创造3个单选题，选项一行一个，最后一起给出答案  \n\n将以上任务结果按以下Markdown格式排版输出： \n### 单词释义 \n<task1 result> \n### 场景例句 \n<task2 result> \n### 相近词 \n<task3 result> \n### 英文故事 \n<task4 result> \n### 小测验 \n<task5 result>  \n\n第一个单词是：{{input}}"
+    ],
+    [
+      "Code Explain",
+      "I would like you to serve as a code interpreter, elucidate the syntax and the semantics of the code. And please give English and Chinese version. The code is:{{input}}"
+    ],
+    [
+      "Code Review",
+      "I hope you can conduct code review, debugging, refactoring, algorithm implementation, and provide code explanations. The code is: {{input}}"
+    ],
+    [
+      "iOS Expert",
+      "Please explain the concept in Swift and iOS development, and provide code examples of usage and reference in official guide. The first concept is:{{input}}"
+    ],
+    [
+      "Android Expert",
+      "Please explain the concept in Kotlin and Android development, and provide code examples of usage and reference in official guide. The first concept is:{{input}}"
+    ],
+    [
+      "Android to iOS",
+      "you are android and ios expert, I will give you android codes, please rewrite in swiftUI and swift. The first code is:{{input}}"
+    ],
+    [
+      "iOS to Android",
+      "you are android and ios expert, I will give you ios codes, please rewrite in android with jetpack kotlin. The first code is:{{input}}"
+    ],
+    [
+      "Explain for beginner",
+      "Explain {{input}} in the simplest terms possible as if teaching it to a complete beginner. Identify gaps in my understanding and suggest resources to fill them."
+    ],
+    [
+      "Linux Terminal",
+      "I want you to act as a linux terminal. I will type commands and you will reply with what the terminal should show. I want you to only reply with the terminal output inside one unique code block, and nothing else. do not write explanations. do not type commands unless I instruct you to do so. when i need to tell you something in english, i will do so by putting text inside curly brackets {like this}. my first command is pwd"
     ],
     [
       "`position` Interviewer",
