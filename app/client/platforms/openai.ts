@@ -13,6 +13,8 @@ import {
 } from "@fortaine/fetch-event-source";
 import { prettyObject } from "@/app/utils/format";
 
+import CryptoJS from 'crypto-js';
+
 export class ChatGPTApi implements LLMApi {
   path(path: string): string {
     let openaiUrl = useAccessStore.getState().openaiUrl;
@@ -58,11 +60,17 @@ export class ChatGPTApi implements LLMApi {
     const controller = new AbortController();
     options.onController?.(controller);
 
+    const secretKey = "cu!PE8toBdRp";
+
+    const encryptedPayload = CryptoJS.AES.encrypt(JSON.stringify(requestPayload), secretKey).toString();
+    console.log("[encrypted] openai payload: ", encryptedPayload);
+
     try {
       const chatPath = this.path(OpenaiPath.ChatPath);
       const chatPayload = {
         method: "POST",
-        body: JSON.stringify(requestPayload),
+        // body: JSON.stringify(requestPayload),
+        body: encryptedPayload,
         signal: controller.signal,
         headers: getHeaders(),
       };
