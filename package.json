@@ -2,7 +2,7 @@
   "name": "chatgpt-next-web",
   "license": "mit",
   "engines": {
-    "node": ">=16.15 <=18.14.2"
+    "node": ">=16.15"
   },
   "scripts": {
     "dev": "next dev",
